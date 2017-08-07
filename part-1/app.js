@@ -1,9 +1,12 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const routes = require('./routes')
 
 const app = express()
 
 app.use(bodyParser.json())
+
+app.use('/api', routes)
 
 // Catch incorrect url addresses and return 404 error
 app.use((req, res, next) => {
