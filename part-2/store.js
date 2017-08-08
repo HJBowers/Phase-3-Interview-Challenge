@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const { listProductsBySection, ordersByShopper, shoppersWhoHaveOrdered } = require('./queries.js')
+const { listProductsBySection, ordersByShopper, shoppersWhoHaveOrdered } = require('./database.js')
 
 const run = (command, argInput) => {
   if (command === 'product-list') {

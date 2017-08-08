@@ -10,7 +10,8 @@
     "db:drop": "dropdb grocery_store",
     "db:schema": "psql grocery_store < ./schema.sql",
     "db:seed": "cat ./load_data.sql | psql grocery_store",
-    "db:reset": "npm run db:drop && npm run db:create && npm run db:schema"
+    "db:reset": "npm run db:drop && npm run db:create && npm run db:schema",
+    "test": "mocha database_test.js"
   },
   "keywords": [],
   "author": "",
