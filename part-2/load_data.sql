@@ -40,3 +40,7 @@ INSERT INTO items(name,price,section) VALUES ('Soda','11.21','miscellaneous');
 INSERT INTO items(name,price,section) VALUES ('Sour Cream','1.73','dairy');
 INSERT INTO items(name,price,section) VALUES ('Tomatoes','1.56','produce');
 INSERT INTO items(name,price,section) VALUES ('Yogurt','18.67','dairy');
+INSERT INTO shoppers(name) VALUES ('murphy');
+INSERT INTO shoppers(name) VALUES ('jb');
+INSERT INTO orders(id_shopper,total) VALUES ('1', '40.00');
+INSERT INTO orders(id_shopper,total) VALUES ('2', '50.00');
