@@ -5,29 +5,45 @@
     <title>Grocer</title>
 
     <link rel="stylesheet" href="grocer.css">
+    <script src="./grocer.js" type="text/javascript"></script>
   </head>
   <body class="flex flex-column">
     <header class="site-header flex flex-row-between">
       <h1>Grocer</h1>
-      <button type="button" id="cart-button">
+      <button type="button" class="cart-button modal-open-button">
         Cart
-        &nbsp;<span id="cart-item-count">(3)</span>
+        &nbsp;<span class="cart-item-count">(0)</span>
       </button>
     </header>
+
+      <div class="modal">
+        <div class="modal-window">
+          <div class="flex flex-row-between">
+            <button type="button" class="modal-close-button">X</button>
+            <h2>Cart</h2>
+          </div>
+          <ul class="cart-items">
+          </ul>
+          <div id="modal-bottom" class="flex flex-row-between">
+            <button type="button" id="clear-cart-button">Clear</button>
+            <span>Total <span class="cart-total-price"></span></span>
+          </div>
+        </div>
+      </div>
 
     <div class="flex flex-full">
       <div class="sidebar">
         <ul>
           <h4>Sections</h4>
-          <li>Produce</li>
-          <li>Deli</li>
-          <li>Frozen</li>
+          <a href="#produce"><li>Produce</li></a>
+          <a href="#deli"><li>Deli</li></a>
+          <a href="#frozen"><li>Frozen</li></a>
         </ul>
       </div>
       <div class="content">
         <h1>Groceries</h1>
         <ul class="item-section">
-          <h3>Produce</h3>
+          <a name="produce"><h3>Produce</h3></a>
           <li class="item flex flex-row-between">
             <span class="item-name">Onions</span>
             <span class="item-price">$1.11</span>
@@ -46,7 +62,7 @@
         </ul>
 
         <ul class="item-section">
-          <h3>Deli</h3>
+          <a name="deli"><h3>Deli</h3></a>
           <li class="item flex flex-row-between">
             <span class="item-name">Cold Cuts</span>
             <span class="item-price">$1.47</span>
@@ -55,7 +71,7 @@
         </ul>
 
         <ul class="item-section">
-          <h3>Frozen</h3>
+          <a name="frozen"><h3>Frozen</h3></a>
           <li class="item flex flex-row-between">
             <span class="item-name">Orange Juice</span>
             <span class="item-price">$2.52</span>
