@@ -81,6 +81,64 @@ body {
   padding: 0 12px;
 }
 
+
+
+
+/* MODAL */
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.50);
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-open {
+  display: block;
+}
+
+.modal-window {
+  position: relative;
+  overflow: auto;
+  background-color: white;
+  margin: 100px;
+  padding: 1em;
+}
+
+.modal-window .modal-close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-open-button {
+
+}
+
+.modal-close-button {
+
+}
+
+#modal-bottom {
+  margin-top: 32px;
+  font-size: 18px;
+}
+
+/*.total-cost {
+  position: absolute;
+  bottom: 1;
+  right: 0;
+  flex: 1;
+}*/
+
+
+
 /* ITEM LIST */
 .item-section {
   list-style-type: none;
